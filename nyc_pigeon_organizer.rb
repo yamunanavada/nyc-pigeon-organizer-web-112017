@@ -1,6 +1,5 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  def nyc_pigeon_data(hash)
   new_data = {}
   keys = hash.keys
 
