@@ -1,11 +1,11 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   new_data = {}
-  keys = hash.keys
+  keys = data.keys
 
   #find pigeon names
   pigeon_names = []
-  hash.each do |char, what|
+  data.each do |char, what|
     what.each do |type, pigeons|
       pigeon_names.push(pigeons)
     end
@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
 
   #push the stuff into each
   pigeon_names.each do |name|
-    hash.each do |char, what|
+    data.each do |char, what|
      what.each do |type, pigeons|
        pigeons.each do |who|
           if name == who && !new_data[name][char]
